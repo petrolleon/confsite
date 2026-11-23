@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conférence IA 2026 · Chabrillan Saint-Jean-Baptiste</title>
+  <meta name="description" content="Conférence sur l’intelligence artificielle organisée par l’ensemble scolaire Chabrillan Saint-Jean-Baptiste, le lundi 14 décembre 2026 de 8h30 à 16h30, salle Gisèle-Didier à Montélimar : intervenants, programme, sponsors et inscription.">
+  <meta property="og:title" content="Conférence IA 2026 · Chabrillan Saint-Jean-Baptiste">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/affiche.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Poppins:wght@400;500;600;700;800&display=swap">
+  <style>
+    :root {
+      --ink: #03181d; --abyss: #052a31; --lagoon: #0b5563; --cyan: #2ee6e6; --sky: #5bb8d4; --amber: #fde68a;
+      --sans: "Poppins", system-ui, -apple-system, sans-serif;
+      --hand: "Caveat", "Comic Sans MS", cursive;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; overflow-x: hidden; background: var(--ink); color: #fff; font-family: var(--sans); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, p, ul, ol, figure { margin: 0; padding: 0; }
+    ul, ol { list-style: none; }
+    em { font-style: normal; color: var(--cyan); }
+    section[id] { scroll-margin-top: 5rem; }
+    ::selection { background: var(--cyan); color: var(--ink); }
+    :focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+    .wrap { width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
+    .hand { font-family: var(--hand); font-weight: 500; }
+    .dim { color: rgba(255,255,255,.55); }
+
+    /* Apparition au défilement : masqué seulement si le JS tourne */
+    .js [data-reveal] {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity .7s ease var(--d, 0ms), transform .7s cubic-bezier(.2,.7,.2,1) var(--d, 0ms),
+        translate .3s, rotate .5s, border-color .3s, background-color .3s;
+    }
+    .js [data-reveal].is-visible { opacity: 1; transform: none; }
+
+    /* Boutons */
+    .btn { display: inline-block; padding: .875rem 2rem; border-radius: 999px; background: var(--cyan); color: var(--ink); font-weight: 600; box-shadow: 0 10px 40px -10px rgba(46,230,230,.8); transition: transform .2s, color .2s, box-shadow .2s; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-sm { padding: .5rem 1.25rem; box-shadow: none; }
+    .btn-ghost { background: none; color: #fff; box-shadow: inset 0 0 0 1px rgba(255,255,255,.25); }
+    .btn-ghost:hover { color: var(--cyan); box-shadow: inset 0 0 0 1px var(--cyan); }
+    .btn-dark { padding: 1rem 2.25rem; background: var(--ink); color: #fff; box-shadow: 0 20px 25px -5px rgba(0,0,0,.25); }
+
+    /* En-tête */
+    .site-header { position: fixed; inset: 0 0 auto; z-index: 50; color: #fff; border-bottom: 1px solid transparent; transition: background-color .3s, border-color .3s; }
+    .site-header.scrolled, .site-header.open { background: rgba(3,24,29,.88); border-bottom-color: rgba(255,255,255,.1); backdrop-filter: blur(12px); }
+    .bar { display: flex; align-items: center; justify-content: space-between; padding-block: .75rem; }
+    .brand { display: flex; align-items: center; gap: .75rem; }
+    .brand img { width: 2.75rem; height: 2.75rem; border-radius: 50%; box-shadow: 0 0 0 2px rgba(91,184,212,.6); transition: transform .5s; }
+    .brand:hover img { transform: rotate(20deg); }
+    .brand span { line-height: 1.25; }
+    .brand b { display: block; font-size: 1rem; }
+    .brand small { display: block; font-size: 11px; color: var(--sky); }
+    .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 1rem; padding: 1.25rem; background: rgba(3,24,29,.95); border-top: 1px solid rgba(255,255,255,.1); font-weight: 500; }
+    .site-header.open .nav { display: flex; }
+    .nav a:not(.btn):hover { color: var(--cyan); }
+    .nav .btn { align-self: flex-start; }
+    .menu-btn { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border: 0; border-radius: .5rem; background: none; color: #fff; cursor: pointer; }
+    .menu-btn:hover { background: rgba(255,255,255,.1); }
+    .menu-btn span, .menu-btn span::before, .menu-btn span::after { display: block; width: 1.25rem; height: 2px; border-radius: 2px; background: currentColor; transition: transform .25s, background-color .25s; }
+    .menu-btn span { position: relative; }
+    .menu-btn span::before, .menu-btn span::after { content: ""; position: absolute; left: 0; }
+    .menu-btn span::before { top: -6px; }
+    .menu-btn span::after { top: 6px; }
+    .site-header.open .menu-btn span { background: transparent; }
+    .site-header.open .menu-btn span::before { transform: translateY(6px) rotate(45deg); }
+    .site-header.open .menu-btn span::after { transform: translateY(-6px) rotate(-45deg); }
+
+    /* Vagues décoratives */
+    .waves { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    .waves svg { position: absolute; top: 0; left: 0; width: 200%; height: 100%; animation: drift 40s linear infinite; }
+
+    /* Hero */
+    .hero { position: relative; isolation: isolate; overflow: hidden; padding: 7rem 0 5rem; background: linear-gradient(to bottom, #000, var(--ink), var(--abyss)); }
+    .hero .waves { opacity: .7; mask-image: linear-gradient(to bottom, #000 30%, transparent); }
+    .hero-grid { position: relative; display: grid; gap: 3rem; align-items: center; }
+    .pill { display: inline-block; padding: .375rem 1rem; border: 1px solid rgba(255,255,255,.15); border-radius: 999px; background: rgba(255,255,255,.05); color: var(--sky); font-size: .75rem; font-weight: 500; backdrop-filter: blur(4px); }
+    h1 { margin-top: 1.5rem; font-size: clamp(3.75rem, 12vw, 6rem); font-weight: 800; line-height: .95; letter-spacing: -.025em; }
+    h1 em { text-shadow: 0 0 30px rgba(46,230,230,.45); }
+    .tagline { margin-top: 1.25rem; color: var(--cyan); font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 600; }
+    .meta { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-top: 1.5rem; color: rgba(255,255,255,.85); }
+    .meta li::before { content: ""; display: inline-block; width: .5rem; height: .5rem; margin-right: .5rem; border-radius: 50%; background: var(--cyan); }
+    .label { margin: 2.5rem 0 .75rem; color: rgba(255,255,255,.5); font-size: .75rem; font-weight: 600; letter-spacing: .25em; text-transform: uppercase; }
+    .countdown { display: flex; align-items: flex-start; gap: .5rem; }
+    .unit { display: flex; flex-direction: column; align-items: center; }
+    .num { min-width: 2.4ch; padding: .375rem .5rem; border: 1px solid rgba(46,230,230,.3); border-radius: .75rem; background: rgba(3,24,29,.6); box-shadow: 0 0 24px -8px rgba(46,230,230,.6); font-size: 1.875rem; font-weight: 700; font-variant-numeric: tabular-nums; text-align: center; }
+    .unit-label { margin-top: .375rem; color: var(--sky); font-size: 11px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; }
+    .sep { margin-top: .25rem; color: rgba(46,230,230,.5); font-size: 1.5rem; font-weight: 700; }
+    .today { color: var(--cyan); font-size: 1.875rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+    .hero-art { position: relative; width: 100%; max-width: 28rem; margin: 0 auto; }
+    .hero-art::before { content: ""; position: absolute; inset: 2rem; z-index: -1; border-radius: 50%; background: rgba(46,230,230,.25); filter: blur(64px); }
+    .hero-art img { width: 100%; mask-image: radial-gradient(closest-side, #000 70%, transparent); animation: float 7s ease-in-out infinite; }
+    .hero-art figcaption { position: absolute; left: .5rem; bottom: -.5rem; rotate: -4deg; color: var(--sky); font-size: 1.5rem; animation: wiggle 4s ease-in-out infinite; }
+
+    /* Sections */
+    .sec { position: relative; padding: 5rem 0; }
+    .alt { background: var(--abyss); }
+    .ink { background: var(--ink); }
+    .grad-down { background: linear-gradient(to bottom, var(--abyss), var(--ink)); }
+    .grad-sponsors { overflow: hidden; background: linear-gradient(to bottom, var(--ink), var(--abyss)); }
+    .head p { display: flex; align-items: center; gap: .75rem; color: var(--cyan); font-size: .75rem; font-weight: 600; letter-spacing: .25em; text-transform: uppercase; }
+    .head p::before { content: ""; width: 2rem; height: 1px; background: var(--cyan); }
+    .head h2 { margin-top: .75rem; font-size: clamp(1.875rem, 5vw, 3rem); font-weight: 800; line-height: 1.15; letter-spacing: -.025em; }
+    .lead { max-width: 42rem; margin-top: 1.5rem; color: rgba(255,255,255,.8); font-size: 1.125rem; line-height: 1.625; }
+    .lead b { color: var(--cyan); font-weight: 600; }
+    .note { margin-top: 3rem; color: rgba(255,255,255,.5); font-size: .875rem; }
+
+    /* Infos pratiques */
+    .infos-grid { display: grid; gap: 3.5rem; }
+    .cards { display: grid; gap: 1rem; margin-top: 2.5rem; }
+    .card { padding: 1.25rem; border: 1px solid rgba(255,255,255,.1); border-radius: 1rem; background: rgba(255,255,255,.04); }
+    .card:hover { border-color: rgba(46,230,230,.4); }
+    .cap { color: var(--sky); font-size: .75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+    .strong { margin-top: .25rem; font-weight: 600; }
+    .sub { color: rgba(255,255,255,.6); font-size: .875rem; }
+    .follow { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: 2.5rem; color: rgba(255,255,255,.6); font-size: .875rem; }
+    .socials { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .socials a { padding: .5rem 1rem; border: 1px solid rgba(255,255,255,.15); border-radius: 999px; font-size: .875rem; font-weight: 500; transition: color .2s, border-color .2s; }
+    .socials a:hover { color: var(--cyan); border-color: var(--cyan); }
+    .socials span { color: rgba(255,255,255,.5); }
+    .poster { position: relative; display: block; width: 15rem; margin: 0 auto; align-self: center; rotate: 3deg; }
+    .poster:hover { rotate: 0deg; }
+    .poster img { border-radius: .5rem; box-shadow: 0 25px 50px -12px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.1); }
+    .poster::before { content: ""; position: absolute; top: -.75rem; left: 50%; width: 6rem; height: 1.75rem; translate: -50% 0; rotate: -2deg; background: rgba(91,184,212,.6); backdrop-filter: blur(4px); }
+    .poster span { display: block; margin-top: 1rem; color: var(--sky); font-size: .875rem; font-weight: 500; text-align: center; }
+    .poster:hover span { color: var(--cyan); }
+
+    /* Programme */
+    .two-col { display: grid; gap: 3rem; margin-top: 3rem; }
+    .two-col h3 { color: var(--sky); font-size: 2.25rem; line-height: 1.1; }
+    .timeline { display: grid; gap: .75rem; margin-top: 1.5rem; }
+    .slot { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1rem; padding: 1rem; border: 1px solid rgba(255,255,255,.1); border-radius: 1rem; background: rgba(255,255,255,.04); }
+    .slot:not(.break):hover { border-color: rgba(46,230,230,.4); background: rgba(255,255,255,.06); }
+    .slot.break { border-style: dashed; background: none; }
+    .time { text-align: right; font-variant-numeric: tabular-nums; }
+    .time b { display: block; }
+    .time span { color: rgba(255,255,255,.45); font-size: .75rem; }
+    .slot-body { padding-left: 1rem; border-left: 1px solid rgba(255,255,255,.1); }
+    .badge { display: inline-block; padding: .125rem .625rem; border-radius: 999px; background: rgba(46,230,230,.15); color: var(--cyan); font-size: 11px; font-weight: 600; }
+    .student .badge { background: rgba(252,211,77,.15); color: var(--amber); }
+    .break .badge { background: rgba(255,255,255,.1); color: rgba(255,255,255,.7); }
+    .ceremony .badge { background: rgba(91,184,212,.15); color: var(--sky); }
+    .slot-title { margin-top: .375rem; font-weight: 600; }
+    .break .slot-title { color: rgba(255,255,255,.7); }
+    .who { margin-top: .125rem; color: rgba(46,230,230,.9); font-size: .875rem; }
+    .details { margin-top: .25rem; color: rgba(255,255,255,.6); font-size: .875rem; }
+    #programme .note { font-style: italic; }
+
+    /* Intervenants */
+    .speakers { display: grid; gap: 1.25rem; margin-top: 3rem; }
+    .speaker { padding: 1.5rem; border: 1px solid rgba(255,255,255,.1); border-radius: 1.5rem; background: linear-gradient(to bottom, rgba(255,255,255,.07), transparent); }
+    .speaker:hover { translate: 0 -.375rem; }
+    .avatar { display: grid; place-items: center; width: 5rem; height: 5rem; border-radius: 50%; background: linear-gradient(135deg, var(--cyan), var(--sky)); color: var(--ink); font-size: 1.5rem; font-weight: 800; transition: transform .5s; }
+    .speaker:hover .avatar { transform: scale(1.05) rotate(6deg); }
+    .tone-1 .avatar { background: linear-gradient(135deg, var(--sky), var(--lagoon)); }
+    .tone-2 .avatar { background: linear-gradient(135deg, #6ee7b7, var(--cyan)); }
+    .tone-3 .avatar { background: linear-gradient(135deg, #99f6e4, var(--sky)); }
+    .speaker h3 { margin-top: 1.25rem; font-size: 1.125rem; font-weight: 700; }
+    .role { color: var(--sky); font-size: .875rem; }
+    .topic { margin-top: .75rem; color: rgba(255,255,255,.8); font-size: .875rem; }
+    .topic.tba { color: rgba(255,255,255,.45); font-style: italic; }
+    .slot-pill { display: inline-block; margin-top: 1rem; padding: .25rem .75rem; border-radius: 999px; background: rgba(46,230,230,.1); color: var(--cyan); font-size: .75rem; font-weight: 600; }
+    .students { margin-top: 4rem; padding: 1.5rem; border: 1px solid rgba(253,230,138,.2); border-radius: 1.5rem; background: rgba(253,230,138,.04); }
+    .students h3 { color: var(--amber); font-size: 2.25rem; line-height: 1.1; }
+    .students > p { max-width: 42rem; margin-top: .5rem; color: rgba(255,255,255,.7); }
+    #student-talks { display: grid; gap: 1rem; margin-top: 2rem; }
+    #student-talks li { padding: 1.25rem; border-radius: 1rem; background: rgba(3,24,29,.6); }
+    #student-talks small { color: var(--amber); font-size: .75rem; font-weight: 600; }
+    #student-talks b { display: block; margin-top: .25rem; }
+    #student-talks p { margin-top: .5rem; color: rgba(255,255,255,.7); font-size: .875rem; }
+
+    /* Sponsors */
+    #sponsors .lead { max-width: 36rem; margin-top: 1rem; color: rgba(255,255,255,.7); font-size: 1rem; }
+    .marquee { margin-top: 3rem; padding: 1.25rem 0; overflow: hidden; rotate: -1deg; border-block: 1px solid rgba(255,255,255,.1); background: #fff; }
+    .marquee-track { display: flex; align-items: center; gap: 3.5rem; width: max-content; padding-right: 3.5rem; animation: marquee 35s linear infinite; }
+    .marquee:hover .marquee-track { animation-play-state: paused; }
+    .marquee img { width: auto; height: 4rem; object-fit: contain; }
+    .sponsor-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 3.5rem; }
+    .sponsor { display: flex; flex-direction: column; overflow: hidden; border-radius: 1rem; background: #fff; box-shadow: 0 10px 15px -3px rgba(0,0,0,.3); }
+    .sponsor:hover { translate: 0 -.25rem; rotate: -1deg; }
+    .sponsor div { display: flex; align-items: center; justify-content: center; height: 8rem; padding: 1rem; }
+    .sponsor img { width: auto; max-height: 100%; object-fit: contain; }
+    .sponsor figcaption { padding: .5rem .75rem; background: var(--lagoon); font-size: .75rem; font-weight: 500; text-align: center; }
+    #sponsors > .note { margin-top: 2.5rem; }
+
+    /* Inscription */
+    #inscription { padding-inline: 1.25rem; }
+    .signup { position: relative; isolation: isolate; overflow: hidden; max-width: 64rem; margin: 0 auto; padding: 3.5rem 1.5rem; border-radius: 2rem; background: linear-gradient(135deg, var(--cyan), var(--sky), var(--lagoon)); color: var(--ink); text-align: center; }
+    .signup .waves { z-index: -1; opacity: .3; mix-blend-mode: multiply; }
+    .signup .hand { font-size: 1.875rem; line-height: 1.2; }
+    .signup h2 { margin-top: .5rem; font-size: clamp(2.25rem, 5vw, 3rem); font-weight: 800; letter-spacing: -.025em; }
+    .signup p:not(.hand):not(.fine) { max-width: 36rem; margin: 1rem auto 0; color: rgba(3,24,29,.8); }
+    .signup .btn { margin-top: 2.5rem; }
+    .fine { margin-top: 1rem; color: rgba(3,24,29,.7); font-size: .875rem; }
+
+    /* Pied de page */
+    .footer { padding: 3rem 0; border-top: 1px solid rgba(255,255,255,.1); background: var(--ink); }
+    .foot { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; text-align: center; }
+    .foot-id { display: flex; align-items: center; gap: 1rem; font-size: .875rem; text-align: left; }
+    .foot-id img { width: 4rem; height: 4rem; border-radius: 50%; }
+    .foot-end { display: flex; flex-direction: column; align-items: center; gap: .75rem; }
+    .foot-end .socials a { padding: .375rem .75rem; font-size: .75rem; }
+    .foot-end a.dim { font-size: .75rem; transition: color .2s; }
+    .foot-end a.dim:hover { color: var(--cyan); }
+
+    @keyframes drift { to { transform: translateX(-50%); } }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+    @keyframes float { 0%, 100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(-14px) rotate(1deg); } }
+    @keyframes wiggle { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(2deg); } }
+
+    @media (min-width: 640px) {
+      .sec { padding: 7rem 0; }
+      .hero { padding: 9rem 0 7rem; }
+      .countdown { gap: .75rem; }
+      .num { font-size: 3rem; }
+      .sep { font-size: 2.25rem; }
+      .hero-art figcaption { font-size: 1.875rem; }
+      .cards { grid-template-columns: repeat(3, 1fr); }
+      .poster { width: 18rem; }
+      .slot { grid-template-columns: 5.5rem 1fr; }
+      .speakers { grid-template-columns: repeat(2, 1fr); }
+      .students { padding: 2.5rem; }
+      .marquee img { height: 5rem; }
+      .sponsor-grid { grid-template-columns: repeat(4, 1fr); }
+      .signup { padding: 5rem 3.5rem; }
+    }
+    @media (min-width: 768px) {
+      .menu-btn { display: none; }
+      .nav { position: static; display: flex; flex-direction: row; align-items: center; gap: 1.75rem; padding: 0; border: 0; background: none; font-size: .875rem; }
+      .nav a:not(.btn) { color: rgba(255,255,255,.8); }
+      .nav .btn { align-self: auto; }
+      #student-talks { grid-template-columns: repeat(3, 1fr); }
+      .foot { flex-direction: row; justify-content: space-between; text-align: left; }
+      .foot-end { align-items: flex-end; }
+    }
+    @media (min-width: 1024px) {
+      .hero-grid { grid-template-columns: 1.15fr 1fr; }
+      .hero-art { max-width: none; }
+      .infos-grid { grid-template-columns: 1fr auto; }
+      .two-col { grid-template-columns: 1fr 1fr; gap: 4rem; }
+      .speakers { grid-template-columns: repeat(4, 1fr); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .waves svg, .marquee-track, .hero-art img, .hero-art figcaption { animation: none; }
+      .js [data-reveal] { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body id="top">
+
+<header class="site-header" id="header">
+  <div class="wrap bar">
+    <a href="#top" class="brand">
+      <img src="img/logo.png" alt="" width="44" height="44">
+      <span><b>Conférence <em>IA</em></b><small>Chabrillan Saint-Jean-Baptiste</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#infos">Infos pratiques</a>
+      <a href="#programme">Programme</a>
+      <a href="#intervenants">Intervenants</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#inscription" class="btn btn-sm">S’inscrire</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="waves" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="pill">Ensemble scolaire Chabrillan Saint-Jean-Baptiste</p>
+        <h1>Conférence <em>IA</em></h1>
+        <p class="tagline">Découvrez l’IA dans tous ses domaines</p>
+        <ul class="meta">
+          <li>Lundi 14 décembre 2026</li>
+          <li>De 8h30 à 16h30</li>
+          <li>Salle Gisèle-Didier, Montélimar</li>
+        </ul>
+        <p class="label">Rendez-vous dans</p>
+        <div id="countdown" class="countdown" role="timer" aria-live="off"></div>
+        <div class="actions">
+          <a href="#inscription" class="btn">Je m’inscris</a>
+          <a href="#programme" class="btn btn-ghost">Voir le programme</a>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <img src="img/cerveau.jpg" alt="Un cerveau en réseau de points lumineux flottant au-dessus d’un smartphone, visuel de l’affiche" width="820" height="830">
+        <figcaption class="hand">animée par les élèves&nbsp;!</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="infos" class="sec alt">
+    <div class="wrap infos-grid">
+      <div>
+        <div class="head" data-reveal><p>Infos pratiques</p><h2>Une journée pour tout comprendre de l’IA</h2></div>
+        <p class="lead" data-reveal>Plusieurs intervenants viennent parler de <b>droit</b>, de <b>consulting</b> et échanger autour de sujets variés, aux côtés de <b>présentations préparées par des élèves</b>. Entre deux conférences, des mini-ateliers et un quiz gourmand vous attendent.</p>
+        <div class="cards">
+          <div class="card" data-reveal><p class="cap">Quand</p><p class="strong">Lundi 14 décembre 2026</p><p class="sub">De 8h30 à 16h30</p></div>
+          <div class="card" data-reveal style="--d:100ms"><p class="cap">Où</p><p class="strong">Salle Gisèle-Didier</p><p class="sub">Montélimar</p></div>
+          <div class="card" data-reveal style="--d:200ms"><p class="cap">Sur place</p><p class="strong">Boissons &amp; collations</p><p class="sub">en vente toute la journée</p></div>
+        </div>
+        <div class="follow" data-reveal><span>Suivez les coulisses :</span><div class="socials"></div></div>
+      </div>
+      <a class="poster" href="img/affiche.jpg" target="_blank" rel="noopener noreferrer" data-reveal>
+        <img src="img/affiche.jpg" alt="Affiche de la Conférence IA du 14 décembre 2026" width="1414" height="2000" loading="lazy">
+        <span>Voir l’affiche en grand</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="programme" class="sec grad-down">
+    <div class="wrap">
+      <div class="head" data-reveal><p>Programme</p><h2>Le déroulé de la journée</h2></div>
+      <div class="two-col">
+        <div><h3 class="hand" data-reveal>Matinée</h3><ol class="timeline" id="morning"></ol></div>
+        <div><h3 class="hand" data-reveal>Après-midi</h3><ol class="timeline" id="afternoon"></ol></div>
+      </div>
+      <p class="note" data-reveal>Programme provisoire : certains créneaux restent à confirmer et le déroulé peut encore évoluer d’ici le 14 décembre.</p>
+    </div>
+  </section>
+
+  <section id="intervenants" class="sec ink">
+    <div class="wrap">
+      <div class="head" data-reveal><p>Intervenants</p><h2>Ils prennent la parole</h2></div>
+      <div class="speakers" id="speakers"></div>
+      <div class="students" data-reveal>
+        <h3 class="hand">Et sur scène aussi… les élèves&nbsp;!</h3>
+        <p>Ouverture, transitions, présentations et ateliers : la journée est portée par les élèves de l’ensemble scolaire.</p>
+        <ul id="student-talks"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsors" class="sec grad-sponsors">
+    <div class="wrap">
+      <div class="head" data-reveal><p>Sponsors</p><h2>Merci à nos partenaires</h2></div>
+      <p class="lead" data-reveal>Ces entreprises de la région rendent la journée possible. Un grand merci à elles&nbsp;!</p>
+    </div>
+    <div class="marquee" data-reveal><div class="marquee-track" id="marquee"></div></div>
+    <div class="wrap sponsor-grid" id="sponsor-grid"></div>
+    <p class="wrap note" data-reveal>Vous souhaitez soutenir l’événement ? Contactez l’ensemble scolaire Chabrillan Saint-Jean-Baptiste.</p>
+  </section>
+
+  <section id="inscription" class="sec alt">
+    <div class="signup" data-reveal>
+      <div class="waves" aria-hidden="true"></div>
+      <p class="hand">On vous garde une place ?</p>
+      <h2>Inscription gratuite</h2>
+      <p>Rejoignez-nous le lundi 14 décembre 2026, de 8h30 à 16h30, à la salle Gisèle-Didier de Montélimar.</p>
+      <a class="btn btn-dark" href="https://docs.google.com/forms/d/e/1FAIpQLScS6x79pYYIrTU5gSrAvJnHurVtCF2Btc7R05Bz7bV9tWjEsQ/viewform?usp=header" target="_blank" rel="noopener noreferrer">Remplir le formulaire</a>
+      <p class="fine">Le formulaire s’ouvre dans un nouvel onglet (Google Forms).</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <div class="foot-id">
+      <img src="img/logo.png" alt="Logo de la Conférence IA Chabrillan Saint-Jean-Baptiste" width="64" height="64" loading="lazy">
+      <div>
+        <p><b>Conférence <em>IA</em> · Lundi 14 décembre 2026</b></p>
+        <p class="dim">Ensemble scolaire Chabrillan Saint-Jean-Baptiste</p>
+        <p class="dim">Salle Gisèle-Didier, Montélimar</p>
+      </div>
+    </div>
+    <div class="foot-end">
+      <div class="socials"></div>
+      <a href="#top" class="dim">Revenir en haut</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ------------------------------------------------------------------
+   Données du site : à modifier ici quand les infos sont confirmées
+------------------------------------------------------------------- */
+const CONFERENCE = {
+  date: "2026-12-14T08:30:00", // heure locale du visiteur
+  socials: [
+    { name: "TikTok", handle: "@chab.conf", url: "https://www.tiktok.com/@chab.conf" },
+    { name: "Instagram", handle: "@chab.conf", url: "https://www.instagram.com/chab.conf/" },
+  ],
+};
+
+// Types de créneaux : libellé affiché + classe CSS
+const KINDS = {
+  talk: ["Intervenant", "talk"],
+  student: ["Élèves", "student"],
+  break: ["Pause", "break"],
+  ceremony: ["Cérémonie", "ceremony"],
+};
+
+const MORNING = [
+  {
+    start: "8h30", end: "9h15", kind: "student",
+    title: "Discours d’ouverture, puis « Des dinosaures au dodo »",
+    who: "Ouverture : Ulysse, Marc, Alexandre et Paul · Intervention : Léna et Margaux",
+    details: "Comment l’IA transforme-t-elle le rêve de la résurrection en réalité scientifique ?",
+  },
+  { start: "9h15", end: "10h00", kind: "talk", title: "L’IA et le droit", who: "Juliette Piovesan" },
+  {
+    start: "10h00", end: "10h30", kind: "break", title: "Pause &amp; mini-ateliers",
+    details: "« Cépadel’IA » avec Clément, Sacha, Timothée, Maël et Raphaël · Un quiz pour gagner une pâtisserie ou une boisson avec Mona, Maryam, Feriel et Rayhana.",
+  },
+  {
+    start: "10h30", end: "11h15", kind: "talk", title: "« L’IA ne nous rendra pas plus humains »",
+    who: "Sophie Guibal", details: "30 à 40 minutes, questions comprises.",
+  },
+  {
+    start: "11h15", end: "12h00", kind: "student", title: "L’IA dans les entreprises",
+    who: "PMH (élèves)", details: "30 minutes de présentation + 15 minutes de questions.",
+  },
+  { start: "12h00", end: "13h30", kind: "break", title: "Pause déjeuner" },
+];
+
+const AFTERNOON = [
+  { start: "13h30", end: "14h15", kind: "student", title: "Quels sont les impacts de l’IA sur les arts ?", who: "Lilou et Jeanne (élèves)" },
+  { start: "14h15", end: "15h00", kind: "talk", title: "Intervention à confirmer" },
+  { start: "15h00", end: "15h30", kind: "break", title: "Pause" },
+  { start: "15h30", end: "16h15", kind: "talk", title: "Intervention à confirmer" },
+  { start: "16h15", end: "16h30", kind: "ceremony", title: "Discours de clôture", who: "Marc et Ulysse" },
+];
+
+const SPEAKERS = [
+  { name: "Juliette Piovesan", topic: "L’IA et le droit", slot: "9h15", initials: "JP" },
+  { name: "Sophie Guibal", topic: "« L’IA ne nous rendra pas plus humains »", slot: "10h30", initials: "SG" },
+  { name: "Jérôme Lecourtier", role: "Entreprise Pixel Dorado", topic: "Intervention scientifique et technique", initials: "JL" },
+  { name: "Benjamin Rey", initials: "BR" },
+];
+
+const STUDENT_TALKS = [
+  { who: "Léna et Margaux", slot: "8h30", topic: "Des dinosaures au dodo : comment l’IA transforme-t-elle le rêve de la résurrection en réalité scientifique ?" },
+  { who: "PMH", slot: "11h15", topic: "L’IA dans les entreprises" },
+  { who: "Lilou et Jeanne", slot: "13h30", topic: "Quels sont les impacts de l’intelligence artificielle sur les arts ?" },
+];
+
+// Logos dans img/sponsors/
+const SPONSORS = [
+  { name: "Hôtel du Centre (Pierrelatte)", logo: "hotel-du-centre.jpg" },
+  { name: "Freegun", logo: "freegun.jpg" },
+  { name: "AXA Assurance", logo: "axa.jpg" },
+  { name: "DCA Bâtiment Services", logo: "dca.jpg" },
+  { name: "Gregori International", logo: "gregori.jpg" },
+  { name: "Clari — pompage, curage, inspection", logo: "clari.jpg" },
+  { name: "Silversun Énergie Solaire", logo: "silversun.jpg" },
+  { name: "Teste Autocars", logo: "teste.jpg" },
+];
+
+/* ------------------------------------------------------------------
+   Rendu
+------------------------------------------------------------------- */
+const $ = (sel) => document.querySelector(sel);
+const $$ = (sel) => [...document.querySelectorAll(sel)];
+const rv = (i, step) => `data-reveal style="--d:${i * step}ms"`; // apparition échelonnée
+
+const slotHTML = (it, i) => {
+  const [label, kind] = KINDS[it.kind];
+  return `<li class="slot ${kind}" ${rv(i, 70)}>
+    <div class="time"><b>${it.start}</b><span>${it.end}</span></div>
+    <div class="slot-body">
+      <span class="badge">${label}</span>
+      <p class="slot-title">${it.title}</p>
+      ${it.who ? `<p class="who">${it.who}</p>` : ""}
+      ${it.details ? `<p class="details">${it.details}</p>` : ""}
+    </div>
+  </li>`;
+};
+$("#morning").innerHTML = MORNING.map(slotHTML).join("");
+$("#afternoon").innerHTML = AFTERNOON.map(slotHTML).join("");
+
+$("#speakers").innerHTML = SPEAKERS.map((s, i) => `
+  <article class="speaker tone-${i % 4}" ${rv(i, 100)}>
+    <div class="avatar">${s.initials}</div>
+    <h3>${s.name}</h3>
+    ${s.role ? `<p class="role">${s.role}</p>` : ""}
+    <p class="topic${s.topic ? "" : " tba"}">${s.topic || "Thème bientôt dévoilé"}</p>
+    ${s.slot ? `<p class="slot-pill">${s.slot}</p>` : ""}
+  </article>`).join("");
+
+$("#student-talks").innerHTML = STUDENT_TALKS.map((t) =>
+  `<li><small>${t.slot}</small><b>${t.who}</b><p>${t.topic}</p></li>`).join("");
+
+// Bandeau défilant : la liste est doublée pour une boucle continue (la copie est masquée aux lecteurs d’écran)
+const logo = (s, copy) => `<img src="img/sponsors/${s.logo}" alt="${copy ? "" : s.name}"${copy ? ' aria-hidden="true"' : ""} loading="lazy">`;
+$("#marquee").innerHTML = SPONSORS.map((s) => logo(s)).join("") + SPONSORS.map((s) => logo(s, true)).join("");
+$("#sponsor-grid").innerHTML = SPONSORS.map((s, i) => `
+  <figure class="sponsor" ${rv(i % 4, 80)}>
+    <div><img src="img/sponsors/${s.logo}" alt="" loading="lazy"></div>
+    <figcaption>${s.name}</figcaption>
+  </figure>`).join("");
+
+$$(".socials").forEach((el) => {
+  el.innerHTML = CONFERENCE.socials
+    .map((s) => `<a href="${s.url}" target="_blank" rel="noopener noreferrer">${s.name} <span>${s.handle}</span></a>`)
+    .join("");
+});
+
+/* ------------------------------------------------------------------
+   Vagues décoratives : le motif est tracé sur deux largeurs puis
+   décalé horizontalement pour une boucle sans coupure
+------------------------------------------------------------------- */
+const W = 1200;
+const LINES = 26;
+const wavePath = (i) => {
+  const base = 30 + i * 18;
+  const amp = 22 + (i % 5) * 6;
+  const phase = i * 0.35;
+  let d = "";
+  for (let x = 0; x <= W * 2; x += 20) {
+    const y = base + Math.sin((x / W) * Math.PI * 4 + phase) * amp + Math.sin((x / W) * Math.PI * 2 + i) * 10;
+    d += `${x === 0 ? "M" : "L"}${x} ${y.toFixed(1)} `;
+  }
+  return d;
+};
+const wavesSVG = (k) => `<svg viewBox="0 0 ${W * 2} 520" preserveAspectRatio="none">
+  <defs><linearGradient id="wave-${k}" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#2ee6e6" stop-opacity=".15"/>
+    <stop offset=".5" stop-color="#7ef3c9" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#2ee6e6" stop-opacity=".15"/>
+  </linearGradient></defs>
+  ${Array.from({ length: LINES }, (_, i) => `<path d="${wavePath(i)}" fill="none" stroke="url(#wave-${k})" stroke-width="${i % 4 === 0 ? 1.6 : 0.9}"/>`).join("")}
+</svg>`;
+$$(".waves").forEach((el, k) => { el.innerHTML = wavesSVG(k); });
+
+/* ------------------------------------------------------------------
+   Compte à rebours
+------------------------------------------------------------------- */
+const countdown = $("#countdown");
+const target = new Date(CONFERENCE.date).getTime();
+const UNITS = ["jours", "heures", "min", "sec"];
+let timer;
+
+function tick() {
+  const diff = Math.max(0, target - Date.now());
+  if (diff === 0) {
+    countdown.innerHTML = '<p class="hand today">C’est aujourd’hui — bienvenue à tous !</p>';
+    clearInterval(timer);
+    return;
+  }
+  const values = [
+    Math.floor(diff / 864e5),
+    Math.floor(diff / 36e5) % 24,
+    Math.floor(diff / 6e4) % 60,
+    Math.floor(diff / 1e3) % 60,
+  ];
+  countdown.innerHTML = UNITS
+    .map((label, i) => `<div class="unit"><span class="num">${String(values[i]).padStart(2, "0")}</span><span class="unit-label">${label}</span></div>`)
+    .join('<span class="sep" aria-hidden="true">:</span>');
+}
+tick();
+timer = setInterval(tick, 1000);
+
+/* ------------------------------------------------------------------
+   En-tête : fond au défilement + menu mobile
+------------------------------------------------------------------- */
+const header = $("#header");
+const menuBtn = $("#menu-btn");
+
+function setMenu(open) {
+  header.classList.toggle("open", open);
+  menuBtn.setAttribute("aria-expanded", String(open));
+  menuBtn.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
+}
+menuBtn.addEventListener("click", () => setMenu(!header.classList.contains("open")));
+$$("#nav a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+
+const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 24);
+window.addEventListener("scroll", onScroll, { passive: true });
+onScroll();
+
+/* ------------------------------------------------------------------
+   Apparition des blocs au défilement (après le rendu des listes)
+------------------------------------------------------------------- */
+const revealTargets = $$("[data-reveal]");
+if (!("IntersectionObserver" in window)) {
+  revealTargets.forEach((el) => el.classList.add("is-visible"));
+} else {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: "0px 0px -40px 0px" },
+  );
+  revealTargets.forEach((el) => observer.observe(el));
+}
+</script>
+</body>
+</html>
+```[cite: 1, 2, 3]
